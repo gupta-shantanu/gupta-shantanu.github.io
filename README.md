@@ -1,2 +1,2 @@
 # gupta-shantanu.github.io
-space for my personal website....
+[goto WEBSITE](http://gupta-shantanu.github.io)
