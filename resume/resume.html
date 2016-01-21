@@ -1,559 +1,137 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 12 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:24.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Cambria","serif";
-	color:#365F91;}
-p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
-	{mso-style-link:"Footnote Text Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
-	{mso-style-link:"Comment Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Calibri","sans-serif";}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
-	{mso-style-link:"Comment Subject Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Calibri","sans-serif";
-	font-weight:bold;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-span.MsoSubtleEmphasis
-	{font-family:"Times New Roman","serif";
-	color:gray;
-	font-style:italic;}
-p.Default, li.Default, div.Default
-	{mso-style-name:Default;
-	margin:0cm;
-	margin-bottom:.0001pt;
-	text-autospace:none;
-	font-size:12.0pt;
-	font-family:"Arial","sans-serif";
-	color:black;}
-p.DecimalAligned, li.DecimalAligned, div.DecimalAligned
-	{mso-style-name:"Decimal Aligned";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-span.FootnoteTextChar
-	{mso-style-name:"Footnote Text Char";
-	mso-style-link:"Footnote Text";
-	font-family:"Times New Roman","serif";}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Tahoma","sans-serif";}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
-span.CommentTextChar
-	{mso-style-name:"Comment Text Char";
-	mso-style-link:"Comment Text";}
-span.CommentSubjectChar
-	{mso-style-name:"Comment Subject Char";
-	mso-style-link:"Comment Subject";
-	font-weight:bold;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page Section1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.Section1
-	{page:Section1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+	<title>shantanu@programmer.net</title>
+	<link rel="shortcut icon" href="./resources/favicon.ico"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+	h1,h2,h3,h5 {
+		font-weight:bold;
+	}
+	</style>
 
 </head>
-
-<body lang=EN-IN link=blue vlink=purple>
-
-<div class=Section1>
-
-<p class=MsoNormal style='background:#0F243E'><b><span style='font-size:28.0pt;
-line-height:115%;color:white'>Shantanu Gupta</span></b></p>
-
-<p class=MsoNormal><a href="mailto:shantanugupta.sg@gmail.com"><span
-style='font-size:9.0pt;line-height:115%;font-family:"Arial","sans-serif"'>shantanugupta.sg@gmail.com</span></a><span
-style='font-size:9.0pt;line-height:115%;font-family:"Arial","sans-serif"'>          <u>+91876545365</u>                  <b>Github:</b>gupta-shantanu</span></p>
-
-<p class=MsoNormal><span style='font-size:9.0pt;line-height:115%;font-family:
-"Arial","sans-serif"'>G-77, Saket Bhavan, BIET Jhansi, UP, 284128</span></p>
-
-<p class=MsoNormal style='background:#0F243E'><b><span style='font-size:18.0pt;
-line-height:115%;font-family:"Arial","sans-serif";color:white'>Education</span></b></p>
-
-<table class=MsoTableMediumList1Accent1 border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=154 valign=top style='width:115.5pt;border:none;border-bottom:solid #4F81BD 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>Certificate</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.5pt;border:none;border-bottom:solid #4F81BD 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>Institution/Board</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;border-bottom:
-  solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>Year</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;border-bottom:
-  solid #4F81BD 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>Percentage(%)</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=154 valign=top style='width:115.5pt;border:none;background:#D3DFEE;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>B.Tech,CSE</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.5pt;border:none;background:#D3DFEE;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>B.I.E.T,Jhansi
-  (UPTU)</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;background:#D3DFEE;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>2017(Expected)</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;background:#D3DFEE;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>70%*</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=154 valign=top style='width:115.5pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>Intermediate(12<sup>th</sup>)</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.5pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>The Modern
-  Scool,Lucknow (ISC)</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>2012</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>90%</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=154 valign=top style='width:115.5pt;border:none;border-bottom:solid #4F81BD 1.0pt;
-  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Arial","sans-serif";color:black'>High
-  School (10<sup>th</sup>)</span></b></p>
-  </td>
-  <td width=154 valign=top style='width:115.5pt;border:none;border-bottom:solid #4F81BD 1.0pt;
-  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>The Modern
-  Scool,Lucknow (ICSE)</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;border-bottom:
-  solid #4F81BD 1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>2010</span></p>
-  </td>
-  <td width=154 valign=top style='width:115.55pt;border:none;border-bottom:
-  solid #4F81BD 1.0pt;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Arial","sans-serif";color:black'>91%</span></p>
-  </td>
- </tr>
-</table>
-
-<p class=Default>&nbsp;</p>
-
-<p class=Default style='background:#0F243E'><b><span style='font-size:18.0pt;
-color:white'>Achievements and Participations</span></b></p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Won 2<sup>nd</sup> prize in Coding Competition event at Comfest
-2011,Seth AR Jaipuria School,Kanpur (participation from 30+ schools of North
-India).</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Ranked 9247 among 1.25 lakh applicants in IITJEE-Advanced
-</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Ranked 2902 among 1.75 lakh applicants in UPSEE </p>
-
-<p class=Default>&nbsp;</p>
-
-<p class=Default style='background:#0F243E'><b><span style='font-size:18.0pt;
-color:white'>Projects</span></b></p>
-
-<p class=Default><b><span style='font-size:14.0pt'>Minesweeper</span></b></p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Traditional minesweeper game written in Python</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>used TKinter bindings for implementing GUI</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>simple interface and customizable difficulty levels.</p>
-
-<p class=Default><b><span style='font-size:14.0pt'>Graph Plotter Applet</span></b></p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Java Applet that plots graphs for arbitrary mathematical functions</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Expression evaluation module based on postfix solving using
-simple stack</p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Multiple expressions (up to 4)  supported.</p>
-
-<p class=Default><b><span style='font-size:14.0pt'>Tic Tac Toe AI</span></b></p>
-
-<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt'><span
-style='font-size:14.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:11.0pt'>Single player Tic-Tac-Toe written
-on Python</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>The
-program uses AI heuristic search algorithm of min-max search using alpha-beta
-pruning</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Also
-investigated the difference of performance with and without alpha-beta pruning</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:14.0pt;font-family:"Arial","sans-serif";
-color:black'>Huffman Compression Application</span></b></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>A CLI
-app that compresses given file</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>This
-python program achieves lossless universal compression using Huffman’s
-algorithm.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:14.0pt;font-family:"Arial","sans-serif";
-color:black'>Quiz Engine</span></b></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Designed
-an interactive Quiz module for conducting School’s IT Quiz competition</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
-.0001pt;text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Coded
-on Macromedia Flash 8 (now Adobe Flash)</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Score
-keeping, interactive game play and on demand timer and banner display are some
-of its features</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:14.0pt;font-family:"Arial","sans-serif";
-color:black'>Flash Games</span></b></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Tower
-of Hanoi, Pacman, Tic Tac Toe, Arkanoid ,Chemical Equations</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Designed
-numerous such games on Flash 8 (Shockwave Flash Projects)</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:14.0pt;font-family:"Arial","sans-serif";
-color:black'>Others</span></b></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Contributions
-to small open-source projects such as pyhorosocope (a flask based REST API)</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
-.0001pt;text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>C
-games like ascii-snake</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
-.0001pt;text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Visual
-basic 5 projects like movie guessing game, chess clock timer</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal;text-autospace:none'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Arial","sans-serif";color:black'>Image manipulation
-using gradient decent algorithm written in octave</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-family:"Arial","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;background:#0F243E;text-autospace:none'><b><span style='font-size:18.0pt;
-font-family:"Arial","sans-serif";color:white'>Technical Skills</span></b></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:black'>Programming Languages: </span></b><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:black'>Python,Java,C,Octave(Matlab)</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:black'>Web Development:</span></b><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:black'> Django,Flask,HTML,bootstrap,javascript</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:black'>Softwares:</span></b><span style='font-size:12.0pt'> </span><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif"'>Matlab,Flash 8, MS
-Office,GIMP</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:black'>Other Tools:</span></b><span style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:black'> GIT, </span><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif"'>VIM, Pycharm, Python IDLE, SublimeText</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif"'>APIs:
-</span></b><span style='font-size:12.0pt;font-family:"Arial","sans-serif"'>github-apis,
-facebook-graph ,yahoo-stockquote etc.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<div class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:center;line-height:normal;text-autospace:none'><span
-style='font-size:9.0pt;font-family:"Arial","sans-serif"'>
-
-<hr size=2 width="100%" align=center>
-
-</span></div>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-family:"Arial","sans-serif"'>I
-hereby declare that the above information is accurate to the best of my
-knowledge.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-family:"Arial","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:4.7pt'>
-  <td width=204 valign=top style='width:153.35pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
-  height:4.7pt'>
-  <p class=Default>&nbsp;</p>
-  </td>
-  <td width=204 valign=top style='width:153.35pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
-  height:4.7pt'>
-  <p class=Default>&nbsp;</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-family:"Arial","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-bottom:0cm;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='color:black'>&nbsp;</span></p>
-
-<p class=Default>&nbsp;</p>
-
-<p class=Default style='margin-left:36.0pt'><b><span style='font-size:18.0pt'>&nbsp;</span></b></p>
-
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:5.9pt'>
-  <td width=106 valign=top style='width:79.75pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
-  height:5.9pt'>
-  <p class=Default><span style='font-size:10.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:5.9pt'>
-  <td width=106 valign=top style='width:79.75pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
-  height:5.9pt'>
-  <p class=Default><span style='font-size:10.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
-</table>
-
-<p class=Default>&nbsp;</p>
-
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:5.1pt'>
-  <td width=350 valign=top style='width:262.2pt;border:none;padding:0cm 5.4pt 0cm 5.4pt;
-  height:5.1pt'>
-  <p class=Default><span style='font-size:10.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-</div>
-
+<body class="container">
+	<div id="personal">
+		<h1 style="color:SkyBlue;">Shantanu Gupta</h1>
+		
+		<a href="mailto:shantanugupta.sg@gmail.com"> <span class="glyphicon glyphicon-envelope"></span> shantanugupta.sg@gmail.com </a>
+		<a> <span class="glyphicon glyphicon-earphone"></span> +91 8765453565</a>
+		<a> <span class="glyphicon glyphicon-home"></span> G-77 Saket Bhavan BIET Jhansi UP 284128</a>
+		<span class="social social-github"></span>
+	</div>
+	<hr>
+	<div id="education">
+		<h3>Education</h2>
+		<table class="table">
+			<tr><th>Certificate</th><th>Institute/Board</th><th>Year</th><th>Percentage(%)</th></tr>
+			<tr><th>B.Tech,CSE</th><td>B.I.E.T,Jhansi (UPTU)</td><td>2017(Expected)</td><td>70%*</td></tr>
+			<tr><th>Intermediate(12th)</th><td>The Modern Scool,Lucknow (ISC)</td><td>2012</td><td>90%</td></tr>
+			<tr><th>Hight School(10th)</th><td>The Modern Scool,Lucknow (ICSE)</td><td>2010</td><td>91%</td></tr>
+		</table>
+	</div>
+	<div id="achievements">
+		<h3>Achievements and Activities</h2>
+		<ul>
+			<li>Won 2nd prize in Coding Competition at Comfest 2011,Seth AR Jaipuria School,Kanpur (participation from 30+ schools of North India).</li>
+			<li>Conducted IT Quiz Helvetika-2k12 for my School, coded and designed quizing module for the same.</li>
+			<li>Participated and ranked 2<sup>nd</sup> in C-Gambling 2015, the coding event of the college (Ranked #1 in written round)</li>
+			<li>Participated in TCS Information and Technology Quiz in year 2011 and 2012</li>
+			<li>Participated in 3 days workshop on "Ethical Hacking and Computer Security" organised by RoboSapien Tecknologies held at IIT,Delhi</li>
+			<li>Ranked 9247 among 1.5 lakh screened applicants in IIT-JEE Advanced 2013 (Percentile > 93%) and 2902 among 2 lakh applicants in UPSEE 2013(percentile>98%)</li>
+			<li>Ranked 3030 on <a href="spoj.com" title="Sphere Online Judge">SPOJ</a> (<b>user:</b><a href="http://spoj.com/users/l_lawliet">l_lawliet</a>) and level 6 coder on <a href="interviewbit.com">interviewbit</a> (<b>user:</b><a href="https://www.interviewbit.com/profile/lawliet">lawliet</a>)</li>
+
+		</ul>
+	</div>
+	<div id="projects">
+		<h3>Projects</h2>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<h4>Minesweeper</h3>
+				<ul>
+					<li>Traditional minesweeper game written in Python</li>
+					<li>Used TKinter bindings for implementing GUI</li>
+					<li>Simple interface and customizable difficulty levels</li>
+					<li>Hosted <a href="https://github.com/gupta-shantanu/minesweeper">here</a> on Github</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Graph Plotter Applet</h3>
+				<ul>
+					<li>Java Applet that plots graphs for arbitrary mathematical functions</li>
+					<li>Expression evaluation module based on postfix solving using simple stack</li>
+					<li>Multiple expressions (up to 4)  supported/li>
+					<li>Hosted <a href="https://github.com/gupta-shantanu/dumpcode/plotter">here</a> on Github</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Tic Tac Toe A.I.</h3>
+				<ul>
+					<li>Single player Tic-Tac-Toe written on Python</li>
+					<li>The program uses AI heuristic search algorithm of min-max search using alpha-beta pruning</li>
+					<li>Also investigated the difference of performance with and without alpha-beta pruning/li>
+					<li>Hosted <a href="https://github.com/gupta-shantanu/dumpcode/tic_tac_toe_AI">here</a> on Github</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Huffman Compression Application</h3>
+				<ul>
+					<li>A CLI app that compresses given file</li>
+					<li>This python program achieves lossless universal compression using Huffman algorithm</li>
+					<li>Hosted <a href="https://github.com/gupta-shantanu/huffman">here</a> on Github</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Quiz Engine</h3>
+				<ul>
+					<li>Designed an interactive Quiz module for conducting Schools IT Quiz competition</li>
+					<li>Consists of 6 interactive rounds, dynamic scoring module, on demand timer and can display custom banners on the run</li>
+					<li>Coded on Macromedia Flash 8 (now Adobe Flash)</li>
+					<li>Hosted <a href="https://github.com/gupta-shantanu/dumpcode/QuizEngine">here</a> on Github</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Flash Games</h3>
+				<ul>
+					<li><a href="https://github.com/gupta-shantanu/macroflash-hanoi">Tower of Hanoi</a> Customizable difficulty and nice UI</li>
+					<li><a href="https://github.com/gupta-shantanu/macroflash-pacman">Pacman</a> User controlled player with 6 levels of gameplay</li>
+					<li><a href="https://github.com/gupta-shantanu/macroflash-tictac">Tic Tac Toe</a> 3 level difficulty with genius level being unbeatable, 2 players also supported</li>
+					<li><a href="https://github.com/gupta-shantanu/macroflash-smashit">Arkanoid</a> 6 level gameplay with accurate collision physics</li>
+					<li>Designed numerous such games on Flash 8 (Shockwave Flash Applications)</li> 
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<h4>Others</h3>
+				<ul>
+					<li>Contributions to small open-source projects such as pyhorosocope (a flask based REST API)</li>
+					<li>C games like <a href="https://github.com/gupta-shantanu/ascii-snake">ASCII-snake</a> and <a href="https://github.com/gupta-shantanu/dos-piano">DOS-piano</a> (for DOS only)</li>
+					<li>Visual basic 5 projects like guessing game, chess clock timer</li>
+					<li>Image manipulation using gradient decent algorithm written in octave</li> 
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+	<div id="skills">
+		<h3>Technical Skills</h2>
+		<ul>
+			<li><b>Programming Languages:</b> Python,Java,C,Octave, HTML, CSS, Javascript</li>
+			<li><b>Frameworks:</b> Django, Flask, bootstrap, Flash8</li>
+			<li><b>Tools:</b> Git, Vim, PyCharm, SublimeText3, Eclipse</li>
+
+		</ul>
+	</div>
+	<div id="Extra">
+		<h3>Extracurricular Activities</h3>
+		<ul>
+			<li>Member of 2<sup>nd</sup> runner up Counter Strike Team in College Sports Fest</li>
+			<li><b>Other Hobbies:</b> free hand sketching, origami </li>
+		</ul>
+	</div>
+	<hr>
+
+	<div id="declaration">
+		<p>I hereby declare that the above information is accurate to the best of my knowledge.</p>
+	</div>
 </body>
-
 </html>
