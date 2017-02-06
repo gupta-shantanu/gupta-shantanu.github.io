@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>shantanu@programmer.net</title>
-	<link rel="shortcut icon" href="./resources/favicon.ico"/>
-	<link rel="stylesheet" href=".resources/css/bootstrap.min.css">
-	<style>
-	h1 {
-		font-weight:bold;
-	}
-	</style>
+---
+layout: default
+---
 
-</head>
-<body class="container">
-	<h1>Hi, I'm Shantanu</h1>
-<p> Currently only <a href="./resume"> /resume </a> link is working here. </p>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-</body>
-</html>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
