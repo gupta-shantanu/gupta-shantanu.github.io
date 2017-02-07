@@ -11,5 +11,5 @@ Some information about you!
 A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+:iphone: [+91 8765453565](tel:+918765453565)
+:email: [shantanugupta.sg@gmail.com](mailto:shantanugupta.sg@gmail.com)
